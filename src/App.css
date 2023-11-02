@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+:root {
+  /* Theme 1 */
+  --t1-bg-main: hsl(222, 26%, 31%);
+  --t1-bg-keypad: hsl(223, 31%, 20%);
+  --t1-bg-screen: hsl(224, 36%, 15%);
+
+  --t1-key-blue-bg: hsl(225, 21%, 49%);
+  --t1-key-blue-sd: hsl(224, 28%, 35%);
+
+  --t1-key-red-bg: hsl(6, 63%, 50%);
+  --t1-key-dark-red: hsl(6, 70%, 34%);
+
+  --t1-key-orange-bg: hsl(30, 25%, 89%);
+  --t1-key-orange-sh: hsl(28, 16%, 65%);
+
+  --t1-text-blue: hsl(221, 14%, 31%);
+  --t1-text-white: hsl(0, 0%, 100%);
+
+
+  /* Theme 2 */
+  --t2-bg-main: hsl(0, 0%, 90%);
+  --t2-bg-keypad: hsl(0, 5%, 81%);
+  --t2-bg-screen: hsl(0, 0%, 93%);
+
+  --t2-key-blue-bg: hsl(185, 42%, 37%);
+  --t2-key-blue-sd: hsl(185, 58%, 25%);
+
+  --t2-key-red-bg: hsl(25, 98%, 40%);
+  --t2-key-dark-red: hsl(25, 99%, 27%);
+
+  --t2-key-orange-bg: hsl(45, 7%, 89%);
+  --t2-key-orange-sh: hsl(35, 11%, 61%);
+
+  --t2-text-blue:  hsl(60, 10%, 19%);
+  --t2-text-white: hsl(0, 0%, 100%);
+
+
+  /* Theme 3 */
+  --t3-bg-main: hsl(268, 75%, 9%);
+  --t3-bg-keypad: hsl(268, 71%, 12%);
+  --t3-bg-screen: hsl(268, 71%, 12%);
+
+  --t3-key-blue-bg: hsl(281, 89%, 26%);
+  --t3-key-blue-sd: hsl(285, 91%, 52%);
+
+  --t3-key-red-bg: hsl(176, 100%, 44%);
+  --t3-key-dark-red: hsl(177, 92%, 70%);
+
+  --t3-key-orange-bg: hsl(268, 47%, 21%);
+  --t3-key-orange-sh: hsl(290, 70%, 36%);
+
+  --t3-text-yellow:  hsl(52, 100%, 62%);
+  --t3-text-darkblue: hsl(198, 20%, 13%);
+  --t3-text-white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 700;
+  font-family: 'League Spartan', sans-serif;
+  text-transform: uppercase;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+
+  display: grid;
+  place-items: center;
+  background-color: var(--t1-bg-main);
+}
+
+.app-container {
+  width: 450px;
+  max-width: 450px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}

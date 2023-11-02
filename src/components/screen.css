@@ -1,0 +1,25 @@
+.screen {
+    position: relative;
+    width: 100%;
+    min-height: 150px;
+    max-height: 150px;
+    background-color: var(--t1-bg-screen);
+    border-radius: 10px;
+    padding: 2rem;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    overflow: hidden;
+}
+
+.screen-values {
+    font-size: 4rem;
+}
+
+.operator {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    font-size: 2rem;
+}

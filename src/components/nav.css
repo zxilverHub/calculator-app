@@ -1,0 +1,58 @@
+.logo {
+    text-transform: lowercase;
+}
+
+.nav {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: var(--t1-text-white);
+}
+
+.theme-toggle {
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.toggle {
+    position: relative;
+    width: 70px;
+    height: 23px;
+    background-color: var(--t1-bg-keypad);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.toggle-btn {
+    width: 16px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--t1-key-red-bg);
+
+    position: absolute;
+    top: 50%;
+    left: 3px ;
+    transform: translateY(-50%);
+
+    transition: all .5s ease;
+}
+
+.theme-label {
+    position: absolute;
+    top: -1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: .9rem;
+}
+
+.theme-title {
+    font-size: 1rem;
+    letter-spacing: 1px;
+}

@@ -1,0 +1,49 @@
+.keypad {
+    width: 100%;
+    padding: 1.5rem;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    gap: 1.5rem;
+
+    background-color: var(--t1-bg-keypad);
+    border-radius: 10px;
+}
+
+.key {
+    width: 80px;
+    padding-block: .7rem .4rem;
+    text-align: center;
+    background-color: var(--t1-text-white);
+    font-size: 2rem;
+
+    display: grid;
+    place-items: center;
+    border-radius: 5px;
+    box-shadow: 0 5px 0 var(--t1-key-orange-sh);
+    cursor: pointer;
+    user-select: none;
+}
+
+.key:nth-child(17) {
+    width: 100%;
+    grid-column: 1 / 3;
+}
+
+.key:nth-child(4),
+.key:nth-child(17),
+.key:last-child {
+    box-shadow: 0 5px 0 var(--t1-key-blue-sd) !important;
+    background-color: var(--t1-key-blue-bg) !important;
+    color: var(--t1-text-white) !important;
+    font-size: 1.5rem;
+    padding-block: 1rem .6rem;
+}
+
+.key:last-child {
+    width: 100%;
+    grid-column: 3 / 5;
+    background-color: var(--t1-key-red-bg) !important;
+    box-shadow: 0 5px 0 var( --t1-key-dark-red) !important;
+}
